@@ -19,6 +19,8 @@ try:
     for i in alunos:
         print(i)
 
+    sql = "select * from alunos where idade > 18;" # segundo cria o comando em sql
+
     cursor.close()
     conexao.close()
 except:
