@@ -11,10 +11,10 @@ def listar():
 
         cursor.execute(sql)
 
-        alunos = cursor.fetchall()
+        alunos = cursor.fetchall() #retorna vários resultados na busca (como tupla)
 
         for i in alunos:
-            print(f"{i[0]} {i[1]}") #cada coluna da tupla pode ser acessada pelo índice
+            print(f"{i[0]} {i[1]}") #cada coluna da tupla pode ser acessado pelo índice
 
         cursor.close()
         conn.close()

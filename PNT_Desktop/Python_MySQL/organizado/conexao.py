@@ -8,10 +8,12 @@ def conexao():
             password="root",
             database="escola"
         )
-
+        print("Ok")
         return conexao
 
     except mysql.connector.errors.ProgrammingError:
         print("Erro de usuário ou senha.")
+
+conexao()
 
 
