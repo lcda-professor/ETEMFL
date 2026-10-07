@@ -8,7 +8,7 @@ def consultar_por_id(id):
 
         sql = "select * from alunos where id_aluno = %s;" #uso de placeholder - marcador de parâmetro para consulta parametrizada
 
-        cursor.execute(sql, (id,)) #neste caso o execute exige passagem de dois parâmetros: a querry completa e o valor do parâmetro como tupla
+        cursor.execute(sql, (1,)) #neste caso o execute exige passagem de dois parâmetros: a querry completa e o valor do parâmetro como tupla
 
         aluno = cursor.fetchone() #retorna um resultado na busca
 
